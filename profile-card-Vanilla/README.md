@@ -10,10 +10,8 @@ It extends a basic static profile card into a dynamic, stateful UI component wit
 ---
 
 ## 🚀 Live Demo
-[Add your Vercel deployment link here]
+https://todo-card-xsow.vercel.app/
 
-Example:
-https://profile-card-vanilla.vercel.app
 
 ---
 

@@ -9,10 +9,8 @@ It extends a basic static todo card into a fully interactive component with edit
 ---
 
 ## 🚀 Live Demo
-[Add your Vercel deployment link here]
+https://todo-card-fie4.vercel.app/
 
-Example:
-https://todo-card-vanilla.vercel.app
 
 ---
 
