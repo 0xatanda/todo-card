@@ -1,0 +1,96 @@
+body {
+  font-family: system-ui;
+  background: #f5f7fb;
+  padding: 20px;
+}
+
+.card {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PRIORITY */
+.priority.high { color: red; }
+.priority.medium { color: orange; }
+.priority.low { color: green; }
+
+/* COMPLETED */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* COLLAPSE */
+.collapsed {
+  max-height: 40px;
+  overflow: hidden;
+}
+
+/* TAGS */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #111827;
+  color: white;
+}
+
+/* OVERDUE */
+#overdue {
+  color: red;
+  font-weight: bold;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* FOCUS */
+button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid black;
+}

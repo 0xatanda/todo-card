@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card Stage 1a</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<section data-testid="test-profile-card" class="card">
+
+  <!-- PROFILE HEADER -->
+  <div class="header">
+
+    <img
+      data-testid="test-profile-avatar"
+      id="avatar"
+      src="https://i.pravatar.cc/150?img=12"
+      alt="Profile Avatar"
+    />
+
+    <div class="info">
+      <h2 data-testid="test-profile-name" id="name">John Doe</h2>
+
+      <p data-testid="test-profile-title" id="title">Frontend Developer</p>
+
+      <span data-testid="test-profile-status" id="status">
+        Active
+      </span>
+    </div>
+  </div>
+
+  <!-- BIO (COLLAPSIBLE) -->
+  <div class="bio-wrapper">
+
+    <div
+      data-testid="test-profile-bio-section"
+      id="bioSection"
+      class="collapsed"
+    >
+      <p data-testid="test-profile-bio" id="bio">
+        Passionate developer building modern web applications with clean UI, accessibility, and performance in mind.
+      </p>
+    </div>
+
+    <button
+      data-testid="test-profile-expand-toggle"
+      id="toggleBio"
+      aria-expanded="false"
+      aria-controls="bioSection"
+    >
+      Expand Bio
+    </button>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="details">
+
+    <div>
+      <strong>Email:</strong>
+      <span data-testid="test-profile-email" id="email">john@example.com</span>
+    </div>
+
+    <div>
+      <strong>Location:</strong>
+      <span data-testid="test-profile-location" id="location">Lagos, Nigeria</span>
+    </div>
+
+  </div>
+
+  <!-- STATUS CONTROL -->
+  <div class="control">
+
+    <label for="statusControl">Change Status</label>
+
+    <select
+      id="statusControl"
+      data-testid="test-profile-status-control"
+    >
+      <option>Active</option>
+      <option>Inactive</option>
+      <option>Busy</option>
+    </select>
+
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="actions">
+
+    <button data-testid="test-profile-edit-button" id="editBtn">
+      Edit
+    </button>
+
+    <button data-testid="test-profile-delete-button" id="deleteBtn">
+      Delete
+    </button>
+
+  </div>
+
+  <!-- EDIT MODE -->
+  <form
+    data-testid="test-profile-edit-form"
+    id="editForm"
+    hidden
+  >
+
+    <label for="editName">Name</label>
+    <input id="editName" data-testid="test-profile-edit-name-input"/>
+
+    <label for="editTitle">Title</label>
+    <input id="editTitle" data-testid="test-profile-edit-title-input"/>
+
+    <label for="editBio">Bio</label>
+    <textarea id="editBio" data-testid="test-profile-edit-bio-input"></textarea>
+
+    <label for="editEmail">Email</label>
+    <input id="editEmail" data-testid="test-profile-edit-email-input"/>
+
+    <button type="submit" data-testid="test-profile-save-button">
+      Save
+    </button>
+
+    <button type="button" id="cancelBtn" data-testid="test-profile-cancel-button">
+      Cancel
+    </button>
+
+  </form>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
